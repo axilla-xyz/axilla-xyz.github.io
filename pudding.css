@@ -64,9 +64,6 @@ html {
     
 }
 
-
-
-
 #HJm5MgMZWQ {
     -webkit-animation-duration: 3s;
         animation-duration: 3s;
@@ -392,3 +389,17 @@ html {
         opacity: 1
     }
 }
+
+/*  */
+
+@media only screen and (max-width: 40em) {
+
+    .card__item {
+        width: 100%;
+        height: auto;
+    }
+
+    .card__title {
+        font-size: 2em;
+    }
+ }
