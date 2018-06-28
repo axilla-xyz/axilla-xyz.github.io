@@ -1,19 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,900');
 
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
 html {
     box-sizing: border-box;
     font-size: 16px;
   }
-  
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+
+html,body {
+    height: 100%;
+}
   
   body, h1, h2, h3, h4, h5, h6, p, ol, ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
     font-family: 'Fira Sans', sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: table;
+    font-weight: 100;    
   }
   
   h1 {
@@ -29,21 +41,14 @@ html {
 /*  */
 
 .container {
-    max-width: 1200px;
-    max-height: 100%;
-    margin: 0 auto;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .card {      
-    position:absolute;    
-    top: 45%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
     text-align: center;
+    display: inline-block;
 }
 
 .card__item {
@@ -321,30 +326,29 @@ html {
 }
 @-webkit-keyframes BJMbW4KbWQ_Hy004FZWQ_Animation {
     from {
-        -webkit-transform: translate(0px, 60px);        
+        -webkit-transform: translate(0px, 60px);
                 transform: translate(0px, 60px)
     }
     50% {
-        -webkit-transform: translate(0px, 0px);        
+        -webkit-transform: translate(0px, 0px);
                 transform: translate(0px, 0px)
     }
     to {
-        -webkit-transform: translate(0px, 60px);        
+        -webkit-transform: translate(0px, 60px);
                 transform: translate(0px, 60px)
     }
 }
 @keyframes BJMbW4KbWQ_Hy004FZWQ_Animation {
     from {
-        -webkit-transform: translate(0px, 60px);        
-                transform: translate(0px, 60px);
+        -webkit-transform: translate(0px, 60px);
+                transform: translate(0px, 60px)
     }
     50% {
-        -webkit-transform: translate(0px, 0px);        
+        -webkit-transform: translate(0px, 0px);
                 transform: translate(0px, 0px)
     }
     to {
         -webkit-transform: translate(0px, 60px);
-        -ms-transform: translate(0px, 60px);
                 transform: translate(0px, 60px)
     }
 }
@@ -421,4 +425,3 @@ html {
         opacity: 1
     }
 }
-
